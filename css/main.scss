@@ -1,0 +1,43 @@
+body {
+    --accent-color: black;
+    --background-color: white ;
+    --text-color: black;
+    
+    --transition-delay: 1s;
+
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+body.dark {
+
+    --accent-color: white;
+    --background-color: #333 ;
+    --text-color: white;
+    
+    --transition-delay: 1s;
+    
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+.theme-toggle-button {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+
+    outline: none;
+    border: none;
+    transition: var(--transition-delay);
+    transform: scale(1);
+
+}
+
+.theme-toggle-button:hover, .theme-toggle-button:focus {
+    transform: scale(1.1);
+}
